@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .row:nth-child(odd) {
+            background-color: #d3d3d3;
+        }
+
+        .content {
+            width: 960px;
+            height: 100%;
+            border: 5px solid blue;
+        }
+        
+        .row .content:nth-child(odd) {
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <!-- Your content here -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="content">
+                <!-- Your content here -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content">
+                <!-- Your content here -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content">
+                <!-- Your content here -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content">
+                <!-- Your content here -->
+            </div>
+        </div>
+        <!-- Add more divs as needed -->
+    </div>
+</body>
+</html>
